@@ -1,0 +1,14 @@
+{
+  "id": "dune-awakening",
+  "name": "Dune: Awakening",
+  "processNames": ["DuneSandbox-Win64-Shipping.exe"],
+  "map": { "width": 4096, "height": 4096, "image": null, "gridSize": 256, "note": "Blank grid by default. Set a user-supplied image in Settings." },
+  "transform": { "originX": 0, "originY": 0, "scaleX": 1, "scaleY": 1 },
+  "categories": [
+    { "id": "resource", "label": "Ressurs / Resource", "color": "#e0a030" },
+    { "id": "base", "label": "Base", "color": "#3a8fd9" },
+    { "id": "poi", "label": "Interessepunkt / POI", "color": "#c04040" },
+    { "id": "misc", "label": "Diverse / Misc", "color": "#999999" }
+  ],
+  "ocr": { "pattern": null, "region": null, "intervalMs": 1500 }
+}

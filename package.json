@@ -1,0 +1,20 @@
+{
+  "name": "dune-overlay",
+  "productName": "DuneOverlay",
+  "version": "0.1.0",
+  "description": "Original interactive map overlay for Dune Awakening (and other games via profiles). No memory reading, no drivers.",
+  "main": "src/main.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron .",
+    "test": "node --test test/*.test.js",
+    "dist:win": "electron-builder --win portable --x64 --publish never"
+  },
+  "dependencies": { "leaflet": "^1.9.4", "tesseract.js": "^5.1.0" },
+  "devDependencies": { "electron": "^31.7.7", "electron-builder": "^25.1.8" },
+  "build": {
+    "appId": "io.github.xdkurbie.duneoverlay",
+    "files": ["src/**", "profiles/**", "node_modules/**", "package.json"],
+    "win": { "target": "portable", "artifactName": "DuneOverlay-${version}-portable.exe" }
+  }
+}

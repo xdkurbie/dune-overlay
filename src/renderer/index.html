@@ -1,0 +1,22 @@
+<!doctype html><html><head><meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: blob:; style-src 'self' 'unsafe-inline'; script-src 'self' blob:; worker-src blob: 'self'; connect-src 'self' data: blob: https://cdn.jsdelivr.net https://tessdata.projectnaptha.com">
+<link rel="stylesheet" href="../../node_modules/leaflet/dist/leaflet.css">
+<style>
+html,body{margin:0;height:100%;background:transparent;font:13px system-ui;color:#eee}
+#panel{position:absolute;right:16px;top:16px;width:420px;height:70%;background:rgba(20,16,10,.85);border:1px solid #a07830;border-radius:8px;display:flex;flex-direction:column}
+#map{flex:1;background:#2a2218}
+#bar{padding:6px;display:flex;flex-wrap:wrap;gap:4px;align-items:center}
+button,select{background:#3a2e1c;color:#eee;border:1px solid #a07830;border-radius:4px;padding:3px 6px}
+#status{padding:4px 6px;font-size:11px;opacity:.8}
+body.passive #bar{display:none}
+</style></head><body class="passive">
+<div id="panel"><div id="bar">
+<select id="profile"></select><select id="cat"></select><select id="lang"><option value="en">EN</option><option value="nb">NO</option></select>
+<button id="here"></button><button id="ocr"></button><button id="exp"></button><button id="imp"></button><button id="mapimg"></button>
+<input type="file" id="file" accept=".json" hidden><input type="file" id="imgfile" accept="image/*" hidden>
+</div><div id="map"></div><div id="status"></div></div>
+<script src="../../node_modules/leaflet/dist/leaflet.js"></script>
+<script src="../../node_modules/tesseract.js/dist/tesseract.min.js"></script>
+<script src="i18n.js"></script>
+<script src="app.js"></script>
+</body></html>
