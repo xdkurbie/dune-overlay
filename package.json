@@ -11,7 +11,7 @@
     "dist:win": "electron-builder --win portable --x64 --publish never"
   },
   "dependencies": { "leaflet": "^1.9.4", "tesseract.js": "^5.1.0" },
-  "devDependencies": { "electron": "^31.7.7", "electron-builder": "^25.1.8" },
+  "devDependencies": { "electron": "^41.10.6", "electron-builder": "^26.15.3" },
   "build": {
     "appId": "io.github.xdkurbie.duneoverlay",
     "files": ["src/**", "profiles/**", "node_modules/**", "package.json"],
